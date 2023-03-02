@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="Azimuth">
+        <HintPath>..\..\GitHub\Azimuth\Builds\net6.0\Azimuth.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Raylib-cs" Version="4.2.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Assets\Sounds" />
+      <Folder Include="Assets\Textures" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Assets\config.cfg">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Assets\Textures\dino.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
